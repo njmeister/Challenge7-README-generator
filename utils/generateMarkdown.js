@@ -34,29 +34,29 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     if (license === 'MIT') {
-        return `[MIT](https://opensource.org/licenses/MIT)`;
+        return `(https://opensource.org/licenses/MIT)`;
     } else if (license === 'Apache 2.0') {
-        return `[Apache 2.0](https://opensource.org/licenses/Apache-2.0)`;
+        return `(https://opensource.org/licenses/Apache-2.0)`;
     } else if (license === 'GNU GPLv3') {
-        return `[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0)`;
+        return `(https://www.gnu.org/licenses/gpl-3.0)`;
     } else if (license === 'BSD 2') {
-        return `[BSD 2](https://opensource.org/licenses/BSD-2-Clause)`;
+        return `(https://opensource.org/licenses/BSD-2-Clause)`;
     } else if (license === 'BSD 3') {
-        return `[BSD 3](https://opensource.org/licenses/BSD-3-Clause)`;
+        return `(https://opensource.org/licenses/BSD-3-Clause)`;
     } else if (license === 'Boost Software') {
-        return `[Boost Software](https://www.boost.org/LICENSE_1_0.txt)`;
+        return `(https://www.boost.org/LICENSE_1_0.txt)`;
     } else if (license === 'Creative Commons Zero') {
-        return `[Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)`;
+        return `(https://creativecommons.org/publicdomain/zero/1.0/)`;
     } else if (license === 'Eclipse') {
-        return `[Eclipse](https://opensource.org/licenses/EPL-1.0)`;
+        return `(https://opensource.org/licenses/EPL-1.0)`;
     } else if (license === 'GNU Affero GPL') {
-        return `[GNU Affero GPL](https://www.gnu.org/licenses/agpl-3.0)`;
+        return `(https://www.gnu.org/licenses/agpl-3.0)`;
     } else if (license === 'GNU GPLv2') {
-        return `[GNU GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0)`;
+        return `(https://www.gnu.org/licenses/old-licenses/gpl-2.0)`;
     } else if (license === 'Mozilla Public License') {
-        return `[Mozilla Public License](https://opensource.org/licenses/MPL-2.0)`;
+        return `(https://opensource.org/licenses/MPL-2.0)`;
     } else if (license === 'Unlicense') {
-        return `[Unlicense](http://unlicense.org/)`;
+        return `(http://unlicense.org/)`;
     } else if (license === 'None') {
         return '';
     }
@@ -68,7 +68,7 @@ function renderLicenseSection(license) {
   if (license === 'None') {
       return '';
   } else {
-      return `This project is licensed under the ${license} license. See the [license](${renderLicenseLink(license)}) for more information.`;
+      return `This project is licensed under the ${license} license. See the [license]${renderLicenseLink(license)} for more information.`;
   }
 }
 

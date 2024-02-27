@@ -55,7 +55,7 @@ ${data.contributing}\n\n
 ${data.tests}\n\n
             
 ## Questions\n
-Contact me at ${data.email} or visit my [Github](${data.github})\n\n`,
+Contact me at ${data.email} or visit my [Github](https://github.com/${data.github})\n\n`,
 
     (err) => {
         if (err) {
@@ -79,32 +79,32 @@ function init() {
             name: 'description',
             message: 'Enter a description of your application:'
         },
-        // {
-        //     type: 'input',
-        //     name: 'installation',
-        //     message: 'Enter any instructions for installation:'
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'usage',
-        //     message: 'Describe the application's usage:'
-        // },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Enter any instructions for installation:'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: "Describe the application's usage:"
+        },
         {
             type: 'list',
             name: 'license',
             message: 'Choose which license you would like to use:',
             choices: ['MIT', 'Apache 2.0', 'GNU GPLv3', 'BSD 2', 'BSD 3', 'Boost Software', 'Creative Commons Zero', 'Eclipse', 'GNU Affero GPL', 'GNU GPLv2', 'Mozilla Public License', 'Unlicense', 'None'],
         },
-        // {
-        //     type: 'input',
-        //     name: 'contributing',
-        //     message: 'Enter any instructions to contribute:'
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'tests',
-        //     message: 'Tests:'
-        // },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: 'Enter any instructions to contribute:'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Tests:'
+        },
         {
             type: 'input',
             name: 'email',
